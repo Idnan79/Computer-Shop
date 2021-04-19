@@ -1,8 +1,142 @@
-body {
-    
+b#Main{
+  background-color: black;
+  color: aliceblue;
+}
+#btn1 {
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#btn2 {
+    background-color: #e8f808; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#btn3 {
+    background-color: #3e0bf5; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
-h1{
-    background:black;
-    color: white;
+.box{
+  float: left;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  align-items: baseline;
+  height:600px;
+  border-radius: 27px;
+
+  
 }
+.box1 {
+  float: left;
+  
+  width: 35%;
+  height: 50%;
+}
+.box2 {
+  float: left;
+  
+  width: 31.87%;
+  height: 50%;
+}
+.box3 {
+  float: right;
+  
+  width: 30%;
+  height: 50%;
+  
+}
+.box4 {
+  border-radius: 27px;
+ float: left; 
+  border: 5px solid  rgb(32, 1, 1);
+  height: 37%;
+  width: 98.9%;
+ }
+
+ #Pay,#Bank1,#Work1,#GetLoan,#ClearLoan{
+  
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    
+  }
+  #title{
+    padding-left: 20%;
+    font-size: 20px ;
+    margin-top: 60px;
+  }
+  #description{
+    padding-left: 20%;
+    font-size: 15px ;
+    margin-top: 60px;
+
+  }
+  
+  
+  #Pay,#Bank1 active {
+    background-color: #8064ad;
+    box-shadow: 0 5px #666;
+    float:right;
+    
+  }
+  #Work1{
+    background-color: blue;
+  }
+  
+ #Bank1{
+   background-color: yellow;
+ }
+
+ #price{
+  float:right;
+  margin-right: 50px; 
+  margin-top: 30px;
+  font-size: 20px ;
+
+ }
+  #image{
+    float:left;
+    margin-right: 30px;
+    margin-top: 16px;
+    border-radius: 27px;
+    height:205px;
+    width: 200px;
+
+  }
+  #ClearLoan {
+    display: none;
+  }
+  #outstanding{
+    display: none;
+  }
+  #outstandingLoanButton{
+    display: none;
+  }
+  
+  
+  
