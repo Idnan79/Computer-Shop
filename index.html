@@ -1,42 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Home Page on Gitlab!</title>
-    <link href="app.css" rel = "stylesheet" type="text/css" >
-
-    <script src="app.js"></script>
-</head>
-<body>
-    <h1>Komputer Store</h1>
-    <p>Please add drinks to your cart below</p>
-
-    <form action = "/action_index.html">
-        <select  id="list" onchange = "favTutorial()">
-            <option value="65.45" >Kia</option>
-            <option value="43.65">Saab</option>
-            <option value="33.43">Opel</option>
-            <option value="67.88">Audi</option>
-            <option value="56.78">Toyota</option>
-       
+<html>
+    <head>
+        <meta> 
+        <link rel="stylesheet" type="text/css" href="index.css" media= "screen"/>
+    </head>
+    <body>
+        
+        <h1 id="Main">Komputer Store</h1>
+        
+            <div class="box">
+        <div class="box1"><h1>Joe Banker</h1>
+            <span>Balance:</span>
+            <span id="balance">200Kr</span> 
+            <p>&nbsp;<br><br><br><br><br><br></p>
+            <span id =outstanding></span>
+            <button class=button id = "GetLoan" type="button" onclick="handelBanAccount()" color=green>Get a Loan</button>
+            <button class=button id = "outstandingLoanButton" type="button" onclick="handelRemaingLoan() " color=green>Clear Loan</button>
+        </div>
+        <div class="box2"><h1>Work</h1>
+            <span>Pay: &nbsp;&nbsp; </span>
             
-    </select><p>Price</p>
+            <span  id=Bank></span>&nbsp;&nbsp;
+            <span  id=Work>&nbsp;&nbsp; 0.0Kr</span>
+           <p>&nbsp;&nbsp;&nbsp;<br><br><br><br><br><br></p>
+            <button id = "Bank1" type="button" onclick="handelBankButton()" color=green>Bank</button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button  id = "Work1" type="button" onclick=" handelWorkButton() " color=green>Work</button>
+        
+        </div>
+        <div class="box3"><h1>Laptop</h1> 
+
+            <select name="laptop" id ="laptops">
+
+            </select>
+            <p></p>
+            <span>Features: - </span>
+            <span id="specs"></span>
+            </div>
+                    <div  class="box4" >
+            <span id="price"></span>
+            
+            
+            <img src= "" id="image"></img> 
+            <span id ="title">title </span> <br>
+              <span id ="description"></span>
+            
+            
+            <p><br></p>
+            <button  id = "Pay" type="button"  color=green>Buy Now</button>
+            
+        </div>
+        </div>
+    </div>
     
-    <input type = "text" name = "favourite" id = "favourite" size = "20" >
+
+
+        <script src="index.js"></script>
         
-    <input type="number" min="1" max="100">
-        </form>
-   
+ 
         
-</select>
-
-<button  type = "Add to Cart" onclick="alert('Add to Cart')">Click Me!</button>
-
-<h2>Cart</h2>
-
-
-
-</form>
-</body>
+    </body>
 </html>
+
