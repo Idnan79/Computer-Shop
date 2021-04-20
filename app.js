@@ -95,13 +95,14 @@ const handelBankButton = e => {
     WorkElement.innerText = Work + cur;   
     }else if(count=== 1)
     {
-    // BankBalance += Bank * 0.9;
-     comison -= work *0.1;
+     BankBalance -= Work * 0.1;
+     comison += Work *0.1;
      Work= 0;
+     const interest = 10;
      WorkElement.innerText = Work + cur;
-    balanceElement.innerText =  Bankbalance + cur;
-    outstandingElement.innerText = "Outstanding loan:"+comison + cur; 
-    if(commison === 0){
+    balanceElement.innerText =  BankBalance + cur;
+    outstandingElement.innerText = "Outstanding loan:"+ comison  + cur; 
+    if(comison === 0){
         count = 0;
         document.querySelector('#outstanding').style.display='none';
         document.querySelector('#outstandingLoanButton').style.display='none';
